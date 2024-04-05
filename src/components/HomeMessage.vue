@@ -19,7 +19,7 @@ export default {
     sendMessage() {
       axios.get('http://httpbin.org')
           .then(res => {
-                this.message = res.status
+                this.message = res.headers
                 console.log(res.status)
               }
           )

@@ -5,7 +5,7 @@
     <h1>{{student}}</h1>
 
     <!-- 子传父 this.$emit 自定义事件 -->
-    <input type="text" value="text" @click="this.$emit('childList',text)">
+    <input type="text" value="text" @keyup="this.$emit('childList',text)">
   </div>
 </template>
 
